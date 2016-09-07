@@ -29,7 +29,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)/Default
   SECTION:=everun
   CATEGORY:=everun
-  SUBMENU:=2. Applications
+  SUBMENU:=3. Utilities
   TITLE:=Lightweight Secured Socks5 Proxy
   URL:=https://github.com/madeye/shadowsocks-libev
 endef
