@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=shadowsocks-libev
 PKG_VERSION:=2.4.8
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
 PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-libev.git
@@ -45,7 +45,7 @@ define Package/$(PKG_NAME)-polarssl
   $(call Package/$(PKG_NAME)/Default)
   TITLE+= (PolarSSL)
   VARIANT:=polarssl
-  DEPENDS:=+libpolarssl +libpthread
+  DEPENDS:=+libpolarssl +libpthread +zlib
 endef
 
 define Package/$(PKG_NAME)-mbedtls
