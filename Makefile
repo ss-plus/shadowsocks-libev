@@ -81,7 +81,7 @@ define Package/$(PKG_NAME)/install
 #	$(INSTALL_CONF) ./files/shadowsocks.json $(1)/etc
 #	$(INSTALL_BIN) ./files/shadowsocks.init $(1)/etc/init.d/shadowsocks
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-{local,redir,tunnel} $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-{local,redir,tunnel,server} $(1)/usr/bin
 endef
 
 Package/$(PKG_NAME)-polarssl/install=$(Package/$(PKG_NAME)/install)
