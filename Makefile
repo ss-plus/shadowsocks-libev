@@ -38,14 +38,14 @@ define Package/$(PKG_NAME)
   $(call Package/$(PKG_NAME)/Default)
   TITLE+= (OpenSSL)
   VARIANT:=openssl
-  DEPENDS:=+libopenssl +libpthread
+  DEPENDS:=+libopenssl +libpthread +zlib
 endef
 
 define Package/$(PKG_NAME)-polarssl
   $(call Package/$(PKG_NAME)/Default)
   TITLE+= (PolarSSL)
   VARIANT:=polarssl
-  DEPENDS:=+libpolarssl +libpthread +zlib
+  DEPENDS:=+libpolarssl +libpthread
 endef
 
 define Package/$(PKG_NAME)-mbedtls
